@@ -1,0 +1,186 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --bg:#1e2749;
+    --text:#e4d9ff;
+    --card:#CAD3C8;
+}
+body{
+    background-color: var(--bg);
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.game_place{
+    background-color: transparent;
+    width: 50vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.name{
+    padding-top:2vh ;
+    color: var(--text);
+}
+.top_bar{
+    width: 80%;
+    height:10vh;
+    background-color: transparent;
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: row;
+}
+.score{
+    font-size: large;
+    font-weight: 700;
+    font-family: cursive;
+    color: var(--text);
+}
+.health{
+    background-color:transparent;
+    width: 30vh;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.health_bar{
+    width: 50%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction:row ;
+    justify-content: center;
+    align-items: center;
+   
+}
+.heart{
+    width: 2vw;
+    height: 2vw;
+    background-color: transparent;
+    margin-right: 1vw;
+}
+.start_game{
+    background-color: transparent;
+    width: 10vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn_start{
+    background-color: transparent;
+    border: 2px solid var(--text);
+    color: var(--text);
+    width: 9vw;
+    height: 4vh;
+    font-weight: 700;
+    font-size: larger;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.btn_start:hover{
+    border: 2px solid var(--bg);
+    color: var(--bg);
+    background-color: var(--text);
+}
+.again_button{
+    width:10vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+.again_button img{
+    width: 8vw;
+    height: 8vw;
+    cursor: pointer;
+}
+.reset_hover{
+    display: none;
+}
+.again_button:hover .normal_img{
+    display: none;
+}
+.again_button:hover .reset_hover{
+    display: block;
+    cursor: pointer;
+}
+.game-container{
+    width:50vw;
+    height:70vh;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+.card-row{
+    width:100%;
+    height:30%;
+    margin: 2vh 0 0 0 ;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 6vw;
+    height: 12vh;
+    border: 5px solid;
+    border-radius: 20px;
+    margin: 0 2vw 0 0 ;
+    background-color:var(--card);
+    cursor:pointer;
+}
+
+.reveal img{
+    width: 5vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    display: none;
+}
+
+.cardPic{
+    width: 5vw;
+    height: 10vh;
+    background: url('/assets/icons8-sword-32.png');
+}
+
+.card_done{
+    width: 6vw;
+    height: 12vh;
+    background-color:#07C8F9 ;
+}
+
+.lost_screen{
+    width: 100vw;
+    height: 40vw;
+    background-color: #790925;
+    justify-content: center;
+    align-items: center;
+    margin: 18vh 0 0 0;
+    display: flex;
+    flex-direction:row;
+    
+}
+.death{
+    font-size: 10rem;
+    font-weight: 700;
+   
+}
+.hide{display: none;}
